@@ -1,0 +1,42 @@
+# ------------------------------------------------------------------ Unity
+# Всё это редактор строит сам по Assets + ProjectSettings. В репо им делать
+# нечего, а Library на этой машине весит 393 МБ.
+game/Library/
+game/Temp/
+game/Logs/
+game/UserSettings/
+game/*.sln
+game/*.csproj
+
+# Сборка: 100 МБ, пересобирается одной командой run_steps.ps1 -Only step4-player
+game/Build/
+
+# ------------------------------------------------------------------ инструменты
+# Установщик Unity, который скачался под конвейер, и временные раскладки того же
+# конвейера: скрипты из _installer нужны, их выход — нет.
+_installer/UnitySetup64-*.exe
+_installer/tmp/
+_installer/logs/
+_installer/*.log
+_installer/*.png
+_installer/*.txt
+_installer/*.dll
+
+# ------------------------------------------------------------------ входящие загрузки
+# Скачанные и разложенные под установку пакеты ассетов. Это чужие файлы, и
+# выкладывать их от своего имени — не наше решение.
+_assets/
+_staging/
+_staging$2/
+_tools/
+Silentware-master/
+
+# Рабочие FBX Blender-конвейера: руки и AK из Counter-Strike. Итог конвейера
+# лежит в game/Assets/Art/ViewModel, а исходники ассетов Valve здесь.
+_grip/
+
+# ------------------------------------------------------------------ прочее
+*.tmp
+*.bak
+Thumbs.db
+Desktop.ini

@@ -1,0 +1,26 @@
+[Unit]
+Description=Neon Relay lobby registry
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+# Non-root: the registry owns no privileged port and holds no state worth escalating to.
+User=lobby
+Group=lobby
+WorkingDirectory=/opt/neonrelay-lobby
+ExecStart=/usr/bin/node /opt/neonrelay-lobby/server.mjs
+Restart=always
+RestartSec=2
+Environment=PORT=8791
+Environment=PUBLIC_ADDR=166.1.144.235
+StandardOutput=append:/var/log/neonrelay-lobby.log
+StandardError=append:/var/log/neonrelay-lobby.err.log
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+ReadWritePaths=/var/log
+
+[Install]
+WantedBy=multi-user.target

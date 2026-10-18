@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fc9a1efed45a8349807a1ba158e8351, type: 3}
+  m_Name: GameConfig
+  m_EditorClassIdentifier: 
+  walkSpeed: 3
+  runSpeed: 6
+  acceleration: 16
+  jumpHeight: 2.2
+  gravity: -26
+  coyoteTime: 0.12
+  jumpBufferTime: 0.15
+  jumpCutMultiplier: 0.45
+  dashSpeed: 19
+  dashDuration: 0.18
+  dashCooldown: 0.75
+  maxHealth: 100
+  hazardDamage: 20
+  hazardDamageInterval: 0.6
+  collectibleScore: 25
+  collectibleCount: 8
+  fireInterval: 0.1
+  magazineSize: 30
+  reloadDuration: 2.1
+  aimRange: 120
+  spreadPerShot: 0.32
+  maxSpread: 2.2
+  spreadRecovery: 3.4
+  lobbyServerUrl: http://166.1.144.235:8791
+  eyeHeight: 1.62
+  eyeForwardOffset: 0.14
+  cameraFieldOfView: 55
+  minPitch: -80
+  maxPitch: 80
+  initialYaw: 0
+  bodyTurnSpeed: 540
+  menuCameraDistance: 4.2
+  menuCameraHeight: 1.35
+  menuCameraYaw: 180
+  menuCameraPitch: -5
+  menuFieldOfView: 38
+  cameraFollowSpeed: 14
+  respawnY: -25

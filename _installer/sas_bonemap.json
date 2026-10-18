@@ -1,0 +1,21 @@
+{
+  "pelvis": "Hips",
+  "spine_0": "Abdomen",
+  "spine_1": "Torso",
+  "spine_3": "Neck",
+  "head_0": "Head",
+  "clavicle_l": "Shoulder.L",
+  "arm_upper_l": "UpperArm.L",
+  "arm_lower_l": "LowerArm.L",
+  "hand_l": "Fist.L",
+  "clavicle_r": "Shoulder.R",
+  "arm_upper_r": "UpperArm.R",
+  "arm_lower_r": "LowerArm.R",
+  "hand_r": "Fist.R",
+  "leg_upper_l": "UpperLeg.L",
+  "leg_lower_l": "LowerLeg.L",
+  "ankle_l": "Foot.L",
+  "leg_upper_r": "UpperLeg.R",
+  "leg_lower_r": "LowerLeg.R",
+  "ankle_r": "Foot.R"
+}
